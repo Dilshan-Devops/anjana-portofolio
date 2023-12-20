@@ -11,8 +11,11 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="{{ asset('/css/alerts.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -71,11 +74,13 @@
         <!-- About Section Description -->
         <div class="about-description">
             <p>As a creative graphic designer with over six years of experience, I specialize in designing event posts,
-                logos, social media, banner images, flyers, and various other graphic designs. My expertise has been honed
+                logos, social media, banner images, flyers, and various other graphic designs. My expertise has been
+                honed
                 through self-study and a strong passion for the field. I have had the pleasure of working with numerous
                 companies and clients as a freelancer, and I am currently collaborating with several event management
                 companies. My work is characterized by its unique and engaging visuals, which have helped boost brand
-                awareness and drive social media engagement. I am committed to delivering exceptional designs that resonate
+                awareness and drive social media engagement. I am committed to delivering exceptional designs that
+                resonate
                 with the target audience and enhance the overall visual appeal of any project.</p>
             <div class="social-media">
                 <a href="http://facbook.com/"><i class="fa-brands fa-facebook-f"></i></a>
@@ -158,7 +163,7 @@
                 <img src="./images/services2.jpg" alt="">
                 <div class="service-description">
                     <p>Social Media Post Design</p>
-                    <a class="action-btn" href="{{ route('order')}}">Start Design</a>
+                    <a class="action-btn" href="{{ route('order') }}">Start Design</a>
                 </div>
             </div>
         </div>
@@ -168,7 +173,7 @@
                 <img src="./images/services3.jpg" alt="">
                 <div class="service-description">
                     <p>Flyer Design</p>
-                    <a class="action-btn" href="{{route('order')}}">Start Design</a>
+                    <a class="action-btn" href="{{ route('order') }}">Start Design</a>
                 </div>
             </div>
 
@@ -176,7 +181,7 @@
                 <img src="./images/services4.jpg" alt="">
                 <div class="service-description">
                     <p>YouTube Thumbnail Design</p>
-                    <a class="action-btn" href="{{route('order')}}">Start Design</a>
+                    <a class="action-btn" href="{{ route('order') }}">Start Design</a>
                 </div>
             </div>
         </div>
@@ -235,7 +240,7 @@
             <p class="subtilte">Contact US</p>
         </div>
 
-        <form class="contact-form" action="{{route('contact.create')}}" method="POST">
+        <form class="contact-form" action="{{ route('contact.create') }}" method="POST">
             @csrf
             <!--<label for="name">Name:</label>-->
             <input type="text" id="name" name="name" required placeholder="Name"><br><br>
@@ -260,7 +265,8 @@
     <section class="footer" id="footer">
         <div class="footer-top">
             <!-- Logo Image-->
-            <a href="./index.html"><img src="./images/logo.png" alt="Anjana Dil Graphic Design Logo - anjanadil.com"></a>
+            <a href="./index.html"><img src="./images/logo.png"
+                    alt="Anjana Dil Graphic Design Logo - anjanadil.com"></a>
 
             <!--Social Media-->
             <div class="social-media">
@@ -291,17 +297,15 @@
     </section>
 
     <!-- Link JavaScript Files -->
+    <script src="{{ asset('/js/alerts.js') }}"></script>
+
     @if (session()->has('success'))
-    <script>
-        alert("{{ session('success') }}");
-        // Swal.fire({
-        //     position: "top-end",
-        //     icon: "success",
-        //     title: "{{ session('success') }}",
-        //     showConfirmButton: false,
-        //     timer: 1500
-        // });
-    </script>
+        <script>
+            let globalOptions = {}
+            let currentCallOptions = {}
+            let notifier = new AWN(globalOptions);
+            notifier.success("{{session('success')}}", currentCallOptions);
+        </script>
     @endif
 
 </body>
