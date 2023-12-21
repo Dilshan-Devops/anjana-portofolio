@@ -58,7 +58,7 @@
             <h3>Hello, I am</h3>
             <h1>Anjana Dilhara</h1>
             <p>I will Design your dream design with more than 6 years of experience in Graphic Design.</p>
-            <a class="action-btn" href="./pages/form.html">Get Started</a>
+            <a class="action-btn" href="{{route('order')}}">Get Started</a>
         </ul>
     </section>
 
