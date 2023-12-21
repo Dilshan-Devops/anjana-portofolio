@@ -19,6 +19,10 @@ class FrontendController extends Controller
         return view('order');
     }
 
+    public function portofolio() {
+        return view('portofolio');
+    }
+
     public function createOrder(Request $req)
     {
 

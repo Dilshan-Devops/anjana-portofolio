@@ -139,7 +139,7 @@
             </div>
         </div>
 
-        <a class="action-btn" href="./pages/portfolio.html">Discover</a>
+        <a class="action-btn" href="{{route('portofolio')}}">Discover</a>
     </section>
 
     <!-- Services Section -->

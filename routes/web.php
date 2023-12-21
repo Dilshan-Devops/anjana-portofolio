@@ -18,6 +18,8 @@ Route::get('/', [FrontendController::class , 'home'])->name('home');
 
 Route::get('/order', [FrontendController::class , 'order'])->name('order');
 
+Route::get('/portofolio', [FrontendController::class , 'portofolio'])->name('portofolio');
+
 Route::post('/order/create', [FrontendController::class , 'createOrder'])->name('order.create');
 
 Route::post('/contact/us/create', [FrontendController::class , 'createContact'])->name('contact.create');
