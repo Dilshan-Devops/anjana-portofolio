@@ -20,5 +20,7 @@ This project for assigment for NIBM : Portofolio For Anjana
 -  php artisan key:generate
 - create a database with .env db name
 - php artisan migrate
+- php artsan serve
+- npm run dev
 
 
