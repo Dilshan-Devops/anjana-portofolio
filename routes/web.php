@@ -23,3 +23,13 @@ Route::get('/portofolio', [FrontendController::class , 'portofolio'])->name('por
 Route::post('/order/create', [FrontendController::class , 'createOrder'])->name('order.create');
 
 Route::post('/contact/us/create', [FrontendController::class , 'createContact'])->name('contact.create');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

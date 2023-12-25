@@ -103,13 +103,13 @@
 
         <div class="footer-links">
             <ul class="nav-links">
-                <li><a href="#header">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#portfolio">Portfolio</a></li>
                 <li><a href="/#Services"></a>Services</li>
                 <li><a href="/#reviews">Reviews</a></li>
                 <li><a href="/#Contact">Contact</a></li>
-                <li><a class="action-btn" href="./pages/form.html">Get Started</a></li>
+                
             </ul>
         </div>
 
