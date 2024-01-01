@@ -25,6 +25,10 @@ class FrontendController extends Controller
     public function adminOrders() {
         return view('admin.orders');
     }
+    public function adminContact() {
+        return view('admin.contact');
+    }
+    
 
     public function createOrder(Request $req)
     {
