@@ -34,6 +34,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a class="action-btn" href="/login">Get Access</a></li>
             </ul>
 
             <div class="menubtn">
