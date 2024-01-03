@@ -26,10 +26,10 @@ class FrontendController extends Controller
         return view('admin.orders');
     }
     public function adminContact() {
-        return view('admin.contact');
+        $contactReqs = ContactUs::paginate(5);
+        return view('admin.contact' , ['contacts' => $contactReqs]);
     }
     
-
     public function createOrder(Request $req)
     {
 

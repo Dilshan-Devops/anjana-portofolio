@@ -34,7 +34,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/dashboard', [FrontendController::class , 'adminOrders'])->name('admin.orders');
+    Route::get('/orders', [FrontendController::class , 'adminOrders'])->name('admin.orders');
 
     Route::get('/contact', [FrontendController::class , 'adminContact'])->name('admin.contact');
 });
