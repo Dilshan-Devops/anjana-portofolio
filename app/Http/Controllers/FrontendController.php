@@ -23,7 +23,8 @@ class FrontendController extends Controller
         return view('portofolio');
     }
     public function adminOrders() {
-        return view('admin.orders');
+        $orders = Orders::paginate(5);
+        return view('admin.orders' , ['orders' => $orders]);
     }
     public function adminContact() {
         $contactReqs = ContactUs::paginate(5);

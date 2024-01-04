@@ -166,7 +166,7 @@
                                                 </td>
                                                 <td
                                                     class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
-                                                    {{$contact->subject}}
+                                                    {{$contact->message}}
                                                 </td>
                                                 <td
                                                     class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
