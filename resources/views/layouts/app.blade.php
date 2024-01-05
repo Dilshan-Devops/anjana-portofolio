@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
-    <title>Tailwind CSS Admin Dashboard - Flowbite</title>
+    <title>Anjana Digital Marketing</title>
 
     <link rel="canonical" href="https://flowbite-admin-dashboard.vercel.app/">
     <!-- Scripts -->
@@ -27,13 +27,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://flowbite-admin-dashboard.vercel.app//app.css">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://flowbite-admin-dashboard.vercel.app/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://flowbite-admin-dashboard.vercel.app/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://flowbite-admin-dashboard.vercel.app/favicon-16x16.png">
-    <link rel="icon" type="image/png" href="https://flowbite-admin-dashboard.vercel.app/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo.png">
+    <link rel="icon" type="image/png" href="./images/logo.png">
     <link rel="manifest" href="https://flowbite-admin-dashboard.vercel.app/site.webmanifest">
     <link rel="mask-icon" href="https://flowbite-admin-dashboard.vercel.app/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -96,8 +93,7 @@
                         </svg>
                     </button>
                     <a href="https://www.novatechnologies.tech" _target="blank" class="flex ml-2 md:mr-24">
-                        <img src="./images/logo.png" class="h-8 mr-3"
-                            alt="FlowBite Logo" />
+                        <img src="./images/logo.png" class="h-8 mr-3" alt="FlowBite Logo" />
                         <span
                             class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Anjana</span>
                     </a>
@@ -119,7 +115,7 @@
                     </form>
                 </div>
                 <div class="flex items-center">
-                    
+
                     <button id="toggleSidebarMobileSearch" type="button"
                         class="p-2 text-gray-500 rounded-lg lg:hidden hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
                         <span class="sr-only">Search</span>
@@ -167,11 +163,11 @@
                             id="dropdown-2">
                             <div class="px-4 py-3" role="none">
                                 <p class="text-sm text-gray-900 dark:text-white" role="none">
-                                    {{Auth::user()->name}}
+                                    {{ Auth::user()->name }}
                                 </p>
                                 <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300"
                                     role="none">
-                                    {{Auth::user()->email}}
+                                    {{ Auth::user()->email }}
                                 </p>
                             </div>
                             <ul class="py-1" role="none">
