@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\ContactUs;
 use App\Models\Orders;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\OrderConfirmation;
 
 class FrontendController extends Controller
 {
@@ -54,6 +56,7 @@ class FrontendController extends Controller
             'color3' => $req->color3
         ]);
 
+        Mail::to($req->email)->send(new OrderConfirmation());
         return redirect(route('home'))->with('success', 'Your order has been saved');
     }
 
