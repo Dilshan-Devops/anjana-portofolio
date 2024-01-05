@@ -21,18 +21,26 @@ class FrontendController extends Controller
         return view('order');
     }
 
-    public function portofolio() {
+    public function portofolio()
+    {
         return view('portofolio');
     }
-    public function adminOrders() {
+
+    public function payment()
+    {
+        return view('payment');
+    }
+    public function adminOrders()
+    {
         $orders = Orders::paginate(5);
-        return view('admin.orders' , ['orders' => $orders]);
+        return view('admin.orders', ['orders' => $orders]);
     }
-    public function adminContact() {
+    public function adminContact()
+    {
         $contactReqs = ContactUs::paginate(5);
-        return view('admin.contact' , ['contacts' => $contactReqs]);
+        return view('admin.contact', ['contacts' => $contactReqs]);
     }
-    
+
     public function createOrder(Request $req)
     {
 
@@ -80,7 +88,7 @@ class FrontendController extends Controller
         ]);
 
         //create contact
-       ContactUs::create([
+        ContactUs::create([
             'name' => $req->name,
             'email' => $req->email,
             'phone' => $req->phone,

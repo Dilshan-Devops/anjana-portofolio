@@ -204,7 +204,8 @@
                                     <div class="text-gray-500 font-normal text-sm mb-1.5 dark:text-gray-400"><span
                                             class="font-semibold text-gray-900 dark:text-white">Jese leos</span> and
                                         <span class="font-medium text-gray-900 dark:text-white">5 others</span> started
-                                        following you.</div>
+                                        following you.
+                                    </div>
                                     <div class="text-xs font-medium text-primary-700 dark:text-primary-400">10 minutes
                                         ago</div>
                                 </div>
@@ -527,28 +528,33 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{route('admin.orders')}}"
-
+                                <a href="{{ route('admin.orders') }}"
                                     class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
-                                    <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                                        <path fill-rule="evenodd"
+                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                                            clip-rule="evenodd"></path>
                                     </svg>
                                     <span class="ml-3" sidebar-toggle-item>orders</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{route('admin.contact')}}"
+                                <a href="{{ route('admin.contact') }}"
                                     class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
-                                    <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                                        <path fill-rule="evenodd"
+                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                                            clip-rule="evenodd"></path>
                                     </svg>
                                     <span class="ml-3" sidebar-toggle-item>contact</span>
                                 </a>
                             </li>
                             <li>
-                                <button type="button"
+                                {{-- <button type="button"
                                     class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
                                     aria-controls="dropdown-layouts" data-collapse-toggle="dropdown-layouts">
                                     <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -558,17 +564,17 @@
                                             d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z">
                                         </path>
                                     </svg>
-                                    <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                                        sidebar-toggle-item>Layouts</span>
-                                    <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                 {{-- <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                                        sidebar-toggle-item>Layouts</span> --}}
+                                {{-- <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                </button>
-                                <ul id="dropdown-layouts" class="hidden py-2 space-y-2">
-                                    <li>
+                                </button> --}}
+                                {{-- <ul id="dropdown-layouts" class="hidden py-2 space-y-2"> --}}
+                                {{-- <li>
                                         <a href="https://flowbite-admin-dashboard.vercel.app/layouts/stacked/"
                                             class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Stacked</a>
                                     </li>
@@ -577,8 +583,8 @@
                                             class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Sidebar</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
+                            </li> --}}
+                                {{-- <li>
                                 <button type="button"
                                     class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
                                     aria-controls="dropdown-crud" data-collapse-toggle="dropdown-crud">
@@ -608,8 +614,8 @@
                                             class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700 ">Users</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
+                            </li> --}}
+                                {{-- <li>
                                 <a href="https://flowbite-admin-dashboard.vercel.app/settings/"
                                     class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700 ">
                                     <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -739,8 +745,8 @@
                                             class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700 ">Sidebar</a>
                                     </li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </li> --}}
+                                {{-- </ul>
                         <div class="pt-2 space-y-2">
                             <a href="https://github.com/themesberg/flowbite-admin-dashboard" target="_blank"
                                 class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
@@ -783,7 +789,7 @@
                                 </svg>
                                 <span class="ml-3" sidebar-toggle-item>Support</span>
                             </a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="absolute bottom-0 left-0 justify-center hidden w-full p-4 space-x-4 bg-white lg:flex dark:bg-gray-800"
@@ -941,8 +947,8 @@
         <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
 
         <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
-            
-                {{$slot}}
+
+            {{ $slot }}
 
             <footer
                 class="p-4 my-6 mx-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 xl:p-8 dark:bg-gray-800">

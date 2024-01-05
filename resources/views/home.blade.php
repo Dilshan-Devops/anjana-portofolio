@@ -34,6 +34,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="{{route('payment')}}">Payment</a></li>
                 <li><a class="action-btn" href="/login">Get Access</a></li>
             </ul>
 
@@ -59,7 +60,7 @@
             <h3>Hello, I am</h3>
             <h1>Anjana Dilhara</h1>
             <p>I will Design your dream design with more than 6 years of experience in Graphic Design.</p>
-            <a class="action-btn" href="{{route('order')}}">Get Started</a>
+            <a class="action-btn" href="{{ route('order') }}">Get Started</a>
         </ul>
     </section>
 
@@ -140,7 +141,7 @@
             </div>
         </div>
 
-        <a class="action-btn" href="{{route('portofolio')}}">Discover</a>
+        <a class="action-btn" href="{{ route('portofolio') }}">Discover</a>
     </section>
 
     <!-- Services Section -->
@@ -305,7 +306,7 @@
             let globalOptions = {}
             let currentCallOptions = {}
             let notifier = new AWN(globalOptions);
-            notifier.success("{{session('success')}}", currentCallOptions);
+            notifier.success("{{ session('success') }}", currentCallOptions);
         </script>
     @endif
 
